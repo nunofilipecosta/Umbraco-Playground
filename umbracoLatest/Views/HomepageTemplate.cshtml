@@ -1,12 +1,16 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
     Layout = "RootTemplate.cshtml";
+
+    var stringList = new List<string>() { "Teste", "Teste2", "Teste3" };
 }
 
 <p>bla bajsdkjaklsd lorem>5*>       </p>
 
 @Model.Content.GetProperty("commonTitle").Value
 
+
+@Html.Partial("_ListOfStrings", stringList)
 
 
 @section FooterScripts

@@ -221,15 +221,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\CustomBackofficeTree.cs" />
+    <Compile Include="App_Start\DocumentEvents.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\packages\created\" />
-    <Folder Include="App_Start\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
     <Folder Include="Views\MacroPartials\" />
-    <Folder Include="Views\Partials\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Umbraco.sdf" />
@@ -246,6 +246,63 @@
     <None Include="scripts\jquery-2.0.3-vsdoc.js" />
     <Content Include="scripts\jquery-2.0.3.js" />
     <Content Include="scripts\jquery-2.0.3.min.js" />
+    <Content Include="umbraco\Images\Tray\githubicon.ico" />
+    <Content Include="umbraco\Images\Tray\traySprites.png" />
+    <Content Include="umbraco\Images\Umbraco\bin.png" />
+    <Content Include="umbraco\Images\Umbraco\bin_closed.png" />
+    <Content Include="umbraco\Images\Umbraco\bin_empty.png" />
+    <Content Include="umbraco\Images\Umbraco\developerCacheItem.gif" />
+    <Content Include="umbraco\Images\Umbraco\developerCacheTypes.gif" />
+    <Content Include="umbraco\Images\Umbraco\developerDatatype.gif" />
+    <Content Include="umbraco\Images\Umbraco\developerMacro.gif" />
+    <Content Include="umbraco\Images\Umbraco\developerPython.gif" />
+    <Content Include="umbraco\Images\Umbraco\developerRegistry.gif" />
+    <Content Include="umbraco\Images\Umbraco\developerRegistryItem.gif" />
+    <Content Include="umbraco\Images\Umbraco\developerRuby.gif" />
+    <Content Include="umbraco\Images\Umbraco\developerScript.gif" />
+    <Content Include="umbraco\Images\Umbraco\developerXslt.gif" />
+    <Content Include="umbraco\Images\Umbraco\doc.gif" />
+    <Content Include="umbraco\Images\Umbraco\doc2.gif" />
+    <Content Include="umbraco\Images\Umbraco\doc3.gif" />
+    <Content Include="umbraco\Images\Umbraco\doc4.gif" />
+    <Content Include="umbraco\Images\Umbraco\doc5.gif" />
+    <Content Include="umbraco\Images\Umbraco\docPic.gif" />
+    <Content Include="umbraco\Images\Umbraco\folder.gif" />
+    <Content Include="umbraco\Images\Umbraco\folder_o.gif" />
+    <Content Include="umbraco\Images\Umbraco\mediaFile.gif" />
+    <Content Include="umbraco\Images\Umbraco\mediaMovie.gif" />
+    <Content Include="umbraco\Images\Umbraco\mediaMulti.gif" />
+    <Content Include="umbraco\Images\Umbraco\mediaPhoto.gif" />
+    <Content Include="umbraco\Images\Umbraco\member.gif" />
+    <Content Include="umbraco\Images\Umbraco\memberGroup.gif" />
+    <Content Include="umbraco\Images\Umbraco\memberType.gif" />
+    <Content Include="umbraco\Images\Umbraco\newsletter.gif" />
+    <Content Include="umbraco\Images\Umbraco\nitros.gif" />
+    <Content Include="umbraco\Images\Umbraco\package.gif" />
+    <Content Include="umbraco\Images\Umbraco\package.png" />
+    <Content Include="umbraco\Images\Umbraco\repository.gif" />
+    <Content Include="umbraco\Images\Umbraco\settingAgent.gif" />
+    <Content Include="umbraco\Images\Umbraco\settingCss.gif" />
+    <Content Include="umbraco\Images\Umbraco\settingCssItem.gif" />
+    <Content Include="umbraco\Images\Umbraco\settingDatatype.gif" />
+    <Content Include="umbraco\Images\Umbraco\settingDataTypeChild.gif" />
+    <Content Include="umbraco\Images\Umbraco\settingDomain.gif" />
+    <Content Include="umbraco\Images\Umbraco\settingLanguage.gif" />
+    <Content Include="umbraco\Images\Umbraco\settingMasterDatatype.gif" />
+    <Content Include="umbraco\Images\Umbraco\settingMasterTemplate.gif" />
+    <Content Include="umbraco\Images\Umbraco\settingSkin.gif" />
+    <Content Include="umbraco\Images\Umbraco\settingsScript.gif" />
+    <Content Include="umbraco\Images\Umbraco\settingTemplate.gif" />
+    <Content Include="umbraco\Images\Umbraco\settingView.gif" />
+    <Content Include="umbraco\Images\Umbraco\settingXML.gif" />
+    <Content Include="umbraco\Images\Umbraco\sprites.png" />
+    <Content Include="umbraco\Images\Umbraco\sprites_ie6.gif" />
+    <Content Include="umbraco\Images\Umbraco\statistik.gif" />
+    <Content Include="umbraco\Images\Umbraco\uploadpackage.gif" />
+    <Content Include="umbraco\Images\Umbraco\user.gif" />
+    <Content Include="umbraco\Images\Umbraco\userGroup.gif" />
+    <Content Include="umbraco\Images\Umbraco\userType.gif" />
+    <Content Include="umbraco\Images\Umbraco\VisualStudio.gif" />
     <Content Include="usercontrols\dummy.txt" />
     <Content Include="xslt\dummy.txt" />
   </ItemGroup>
@@ -275,6 +332,7 @@
     <Content Include="Views\HomepageTemplate.cshtml" />
     <Content Include="Views\RootTemplate.cshtml" />
     <Content Include="scripts\jquery-2.0.3.min.map" />
+    <Content Include="Views\Partials\_ListOfStrings.cshtml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

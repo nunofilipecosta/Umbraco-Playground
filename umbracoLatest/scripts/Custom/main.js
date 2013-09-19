@@ -13,7 +13,8 @@ var MainFunction = function () {
 
     add = function (parameter1, parameter2) {
         totalOperations++;
-        return parameter1 + parameter2;
+        var result = parameter1 + parameter2;
+        return result;
     };
 
     return {

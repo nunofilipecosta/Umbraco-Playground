@@ -6,3 +6,16 @@
 <p>bla bajsdkjaklsd lorem>5*>       </p>
 
 @Model.Content.GetProperty("commonTitle").Value
+
+
+
+@section FooterScripts
+{
+    <script src="~/scripts/Custom/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            MainFunction.init();
+            alert(MainFunction.Soma(2, 3));
+        });
+    </script>
+}

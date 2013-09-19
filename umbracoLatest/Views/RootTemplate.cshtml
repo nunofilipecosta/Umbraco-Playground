@@ -1,5 +1,9 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 
+@{
+    Layout = null;
+}
+
 <html>
 <head>
     <title>Homepage - Umbraco Latest</title>
@@ -11,5 +15,8 @@
     @RenderBody()
 
     <p>This is a footer</p>
+
+    <script src="~/scripts/jquery-2.0.3.min.js"></script>
+    @RenderSection("FooterScripts", false)
 </body>
 </html>

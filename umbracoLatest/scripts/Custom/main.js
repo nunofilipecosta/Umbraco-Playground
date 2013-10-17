@@ -17,6 +17,10 @@ var MainFunction = function () {
         return result;
     };
 
+    var doSomething = function() {
+
+    };
+
     return {
         init: init,
         Soma : add

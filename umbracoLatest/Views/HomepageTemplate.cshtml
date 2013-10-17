@@ -12,6 +12,8 @@
 
 @Html.Partial("_ListOfStrings", stringList)
 
+@Html.Action("Index", "CarSurface")
+
 
 @section FooterScripts
 {
@@ -19,7 +21,6 @@
     <script>
         $(document).ready(function () {
             MainFunction.init();
-            alert(MainFunction.Soma(2, 3));
         });
     </script>
 }

@@ -2,16 +2,9 @@
 
 using umbraco.businesslogic;
 using umbraco.cms.presentation.Trees;
-using umbraco.interfaces;
 
-namespace umbracoLatest.App_Start
+namespace UmbracoLatest.App_Start
 {
-    [Application("customBackoffice", "Backoffice", "githubicon.jpg", 7)]
-    public class CustomBackofficeApplication : IApplication
-    {
-
-    }
-
     [Tree("customBackoffice", "customBackoffice_GetUsers", "GetUsers", ".sprTreeFolder", "sprTreeFolder_o")]
     public class CustomBackofficeTree : BaseTree
     {
@@ -42,6 +35,7 @@ namespace umbracoLatest.App_Start
             sendNewsletter.Text = "Send Newsletter";
             sendNewsletter.Icon = "VisualStudio.gif";
             sendNewsletter.Action = "javascript:openSendNewsletter()";
+            
             // Add the node to the tree
             tree.Add(sendNewsletter);
 
@@ -50,6 +44,7 @@ namespace umbracoLatest.App_Start
             previousNewsletters.Text = "Previous Newsletters";
             previousNewsletters.Icon = "docPic.gif";
             previousNewsletters.Action = "javascript:openPreviousNewsletters()";
+            
             // Add the node to the tree
             tree.Add(previousNewsletters);
         }

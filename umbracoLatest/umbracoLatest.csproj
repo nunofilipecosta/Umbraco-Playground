@@ -246,14 +246,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\CustomBackofficeApplication.cs" />
     <Compile Include="App_Start\CustomBackofficeTree.cs" />
     <Compile Include="App_Start\DocumentEvents.cs" />
     <Compile Include="Controllers\CarSurfaceController.cs" />
     <Compile Include="Models\ContactFormViewModel.cs" />
+    <Compile Include="Models\DomainBuilder\ContactFormResponsesDomainBuilder.cs" />
+    <Compile Include="Models\DomainBuilder\IDomainBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\packages\created\" />
+    <Folder Include="Models\ModelBuilder\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <ItemGroup>
@@ -368,6 +372,16 @@
     <None Include="web.Release.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UmbracoLatest.Domain\UmbracoLatest.Domain.csproj">
+      <Project>{1E4DC064-B6E2-42C0-B2A6-36642E204BB1}</Project>
+      <Name>UmbracoLatest.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UmbracoLatest.IOC\UmbracoLatest.IOC.csproj">
+      <Project>{c8c24008-3387-42cc-a153-50ce99aaaf0f}</Project>
+      <Name>UmbracoLatest.IOC</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
